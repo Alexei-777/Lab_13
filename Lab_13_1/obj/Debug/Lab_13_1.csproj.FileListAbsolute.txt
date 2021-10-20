@@ -1,0 +1,7 @@
+F:\YandexDisk\Учеба\C#\Lab_13_1\bin\Debug\Lab_13_1.exe.config
+F:\YandexDisk\Учеба\C#\Lab_13_1\bin\Debug\Lab_13_1.exe
+F:\YandexDisk\Учеба\C#\Lab_13_1\bin\Debug\Lab_13_1.pdb
+F:\YandexDisk\Учеба\C#\Lab_13_1\obj\Debug\Lab_13_1.csproj.AssemblyReference.cache
+F:\YandexDisk\Учеба\C#\Lab_13_1\obj\Debug\Lab_13_1.csproj.CoreCompileInputs.cache
+F:\YandexDisk\Учеба\C#\Lab_13_1\obj\Debug\Lab_13_1.exe
+F:\YandexDisk\Учеба\C#\Lab_13_1\obj\Debug\Lab_13_1.pdb

@@ -24,9 +24,10 @@ namespace Lab_13
     {
         static void Main(string[] args)
         {
-            //Building building = new Building("Юбилейная д.5", 100, 200, 300, 0);
-            MultiBuilding building = new MultiBuilding("Юбилейная д.5", 100, 200, 300, 5);
+            Building building = new Building();
+            MultiBuilding multiBuilding = new MultiBuilding();
             Console.WriteLine(building.Print());
+            Console.WriteLine(multiBuilding.Print());
             Console.ReadKey();
         }
     }
@@ -36,25 +37,34 @@ namespace Lab_13
         public int A { get; set; }
         public int B { get; set; }
         public int H { get; set; }
-        public int E { get; set; }
-        public Building(string Address, int A, int B, int H, int E)
+
+        public Building()
         {
-            this.Address = Address;
-            this.A = A;
-            this.B = B;
-            this.H = H;
-            this.E = E;
+            this.Address = "Юбилейная д.5";
+            this.A = 100;
+            this.B = 200;
+            this.H = 300;
+
         }
         public string Print()
         {
-            return string.Format("Адрес: {0} Длинна: {1} Ширина: {2} Высота {3} Этажей {4}", Address, A, B, H, E);
+            return string.Format("Адрес: {0} Длинна: {1} Ширина: {2} Высота {3}", Address, A, B, H);
         }
     }
     sealed class MultiBuilding : Building
     {
-        public MultiBuilding(string Address, int A, int B, int H, int E)
-            : base(Address, A, B, H, E)
+        public int E { get; set; }
+        public MultiBuilding() : base()
         {
+            this.Address = "Юбилейная д.120";
+            this.A = 300;
+            this.B = 100;
+            this.H = 500;
+            this.E = 5;
+        }
+        public string Print()
+        {
+            return string.Format("Адрес: {0} Длинна: {1} Ширина: {2} Высота {3} Этажей {4}", Address, A, B, H, E);
         }
     }
 }
